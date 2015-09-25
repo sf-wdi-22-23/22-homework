@@ -6,15 +6,15 @@ Homework will be turned in to your fork of this repository daily.
 
 To set up your initial homework repository do the following:
 
-* fork repo
-* clone forked repo
-* cd in to newly cloned repo
-* mkdir **GIT-USER-NAME**
-* cd **GIT-USER-NAME**
-* echo "#**YOUR NAME**'s Homework repo" > readme.md
-* git add -A
-* git commit -am "inital commit"
-* git push
+* fork this repo to create a copy of it on your github account
+* clone the forked repo from your github account onto your computer
+* `cd` into the newly cloned repo on your computer
+* `mkdir **GIT-USER-NAME**`
+* `cd **GIT-USER-NAME**`
+* `echo "#**YOUR NAME**'s Homework repo" > README.md` to set up your repo's README
+* `git add -A` to stage your changes
+* `git commit -m "inital commit"` to have git save your changes
+* `git push origin master` to put your changes up on github!
 
 **GIT-USER-NAME** should be replaced with your actual git user name (must be exact)
 
@@ -24,13 +24,14 @@ To set up your initial homework repository do the following:
 
 ##Submit homework
 
-Each day you will submit your homework by doing the following:
+Each day you will submit your homework by doing the following from within your homework repo on your computer:
 
-* git add -A
-* git commit -am "inital commit"
-* git push
-* go to github.com (navigate to the repo)
-* create pull request
+* copy any required files into your homework repo directory as instructed in homework writeup
+* `git add -A` to stage all your changes
+* `git commit -m "homework commit"` to have git save the changes -- feel free to add to the commit message if you'd like
+* `git push origin master` to put the changes up on github
+* go to your homework repo's page on your account on github.com
+* create a pull request according to the guidelines below
 
 ####Pull request details
 
@@ -49,6 +50,4 @@ completeness: #
 Message about your experience goes here
 ```
 
-Replace the `#` next to comfort/completness with a number (1 - 5) to represent how comfortable you are with the topic and how much of the assignment you were able to complete.
-
-1 being the lowest and 5 being the highest (most comfortable / complete)
+Replace the `#`s next to comfort and completness with a number (1 - 5) to represent how comfortable you are with the topic and how much of the assignment you were able to complete.  A 1 is the lowest (least comfortable / very little complete), and a 5 is the highest (most comfortable / fully complete).
