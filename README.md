@@ -7,7 +7,7 @@ Homework will be turned in to your fork of this repository daily.
 To set up your initial homework repository do the following:
 
 * fork this repo to create a copy of it on your github account
-* clone the forked repo from your github account onto your computer
+* clone the forked repo from your github account onto your computer inside your `dev/` directory
 * `cd` into the newly cloned repo on your computer
 * `mkdir **GIT-USER-NAME**`
 * `cd **GIT-USER-NAME**`
