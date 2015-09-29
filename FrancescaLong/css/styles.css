@@ -1,0 +1,101 @@
+h1 {
+  font-family: cursive, "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 2em; /* 2 times the default size 
+                     can also specify font size in percentages, pixels, or points */
+}
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.2em; 
+}
+p.important {
+    font-size: 1.5em;
+    font-weight: 900; /* ranges from 100 to 900 
+                                - 100 is lightest 
+                                - 900 is heaviest bolding 
+                                - 400 is normal 
+                         can also use lighter, normal, bold, bolder 
+                         can also use tags directly in the html 
+                                - <b></b> is for bold
+                                - <strong></strong> - screen reader may say this in a lower tone */
+}
+.typewriter { /* this class is available to all elements */
+    font-family: "Courier New", Courier, monospace;
+}
+.italic {
+    font-style: italic; /* can also use tags directly in the html 
+                                - <i></i> 
+                                - <em></em> - screen reader put extra vocal emphasis on this */
+}
+.standout {
+    color: #cc0000; /* red - list of hex colors here www.colorpicker.com
+                    or names - red, mediumslateblue - www.crockford.com/wrrrld./color.html */
+}
+.letterSpacing {
+    letter-spacing: .1em; /* adjusts all of the letters in a string
+                             tigher spacing is -.5em (below 0)
+                             greater than normal spacing is above 0 
+                             default normal is 0 - without the em part */
+}
+.wordSpacing {
+    word-spacing: 1em /* adjusts just the words but leaves the letter spacing alone 
+                         default normal is 0 - without the em part */
+}
+.lineHeight {
+    line-height: 2em /* adjusts the spacing between the lines 
+                        1.2em is normal 
+                        1.8em is about 1 and a half lines */
+}
+.dateStyle {
+    text-align: right; /* other options are left, center, justify */
+}
+.firstLineIndent {
+    text-indent: 1em; /* - indents 1st line of a paragraph rather than 0 indent which is default 
+                         - to indent the whole block of text or paragraph use
+                                <blockquote><p>  </p></blockquote> 
+                         - to add blockquote to the css file, see below */
+}
+blockquote { /* slightly increases the font size and changes the color of the blockquote 
+                - when using this, the class name follows blockquote (e.g. blockquote.big) */
+    font-size: 1.4em;
+    color: darkslategray;
+}
+.marginOffset {
+    margin: 2em 2em 2em 2em; /* - top right bottom left 
+                                - if they're all the same, can just put 2em - all will adjust; 
+                                - when setting to 0, don't include the em part 
+                                - can also specify particular margins to adjust 
+                                    - margin-bottom:
+                                    - margin-right:
+                                    - margin-left:
+                                    - margin-top: */
+}
+.border {
+    border: 5px ridge red; /* - width: border is defined in pixels 
+                              - style: 8 options: solid, dotted, dashed, double, groove, ridge,                                                     inset, outset
+                              - color: anything you want - name of hex # values 
+    
+                              - borders can be applied to top, right, bottom, left individually                                */
+}
+.borderIndividual {
+    border-top: 5px dashed red;
+    border-right: 7px double blue;
+    border-bottom: 2px dotted green;
+    border-left: 9px groove orange;
+}
+.borderPadding {
+    border: 3px double red;
+    padding: 2em; /* - can speficy one depth padding or differing for each same as border 
+                     - can also specify the padding as you do with margins 2em 5em 8em 3em */
+}
+.danger {
+    padding: 2em;
+    color: red;
+    background: yellow;
+}
+.success {
+    font: green;
+    border: 1px solid gray;
+}
+.keyword {
+    box-shadow: 2px 2px 2px 2px black,
+}
