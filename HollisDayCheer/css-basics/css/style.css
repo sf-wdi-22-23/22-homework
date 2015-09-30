@@ -1,0 +1,23 @@
+body {
+	background: red;
+}
+
+p {
+	color: orange;
+}
+
+div{
+
+	border: 1px solid black;
+}
+
+.comments {
+	front-eight: bold;
+	color: green;
+}
+
+#sparticus{
+	font-style: italic;
+	color: #white;
+	font-size: 70px;
+}
