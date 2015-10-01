@@ -1,0 +1,22 @@
+p {
+	font-size: 130px;
+	font-family:ImogenAgnes;
+	color: #ff00cc;
+}
+
+.button{
+    display: center;
+    height: 70px;
+	width: 285px;
+	background-color: #ccff00;
+	font-size: 25px;
+	font-family:chivo;
+	font-color: white;
+	text-align:center;
+	border-radius: 15px;
+	border-style: dashed;
+	border-width: 5px;
+	border-color: #ff00cc; 
+	margin-top:10px;
+	margin-left: 0px;
+}
