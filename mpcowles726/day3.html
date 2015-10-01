@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+ 	
+<HTML>
+
+ 	<head>
+		
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">	
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>	
+
+  
+
+ 	</head>
+
+ 	<body>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<h1> Bad parents feeding children to cars</h1>
+					<p class="paragraph">Apparently some parents think its a good idea to feed childen to car parts. While this may temporarily increase horsepower and decrease 1/4 mile times, it is not conducive to a healthy child or large family. Please dont do this. <img id="image" src="http://www.miataforumz.com/attachments/off-topic-discussion-10/3966d1331586154-random-picture-video-thread-*keep-sfw-*-432187_339534392758208_144769175568065_999422_254421309_n.jpg" alt="Baby cause racecar" height="300">
+					</P>
+
+					<button id="button1" type="button"> HIDE BABY  </button>
+					<button id="button2" type="button"> SHOW BABY </button>
+					<button id="button3" type="button"> PEEK A BOO </button>
+
+					
+				</div>
+				
+			</div>
+		</div>
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#button1").click(function(){
+    	$('#image').hide();
+        
+    }); 
+
+    $("#button2").click(function(){
+    	$('#image').show();
+    });
+
+    $("#button3").click(function(){
+    	$('.paragraph').animate({
+    opacity: 0.25,
+    left: "+=50",
+    height: "toggle"
+  }, 5000, function() {
+    // Animation complete.
+  });
+
+    });
+});
+
+</script>
+
+ 	</body>
+ </HTML>
