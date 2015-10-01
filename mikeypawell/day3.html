@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+
+
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <!-- set viewport to device width to allow responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <!-- custom styles (always require after Bootstrap) -->
+  <link rel="stylesheet" href="style.css">
+
+  <title>J Query</title>
+</head>
+<body>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+      <h1>Day 3 Homework</h1>
+        <p>  
+        Bacon ipsum dolor amet turkey tenderloin cow, pork leberkas venison jowl rump shankle beef turducken. Fatback turducken flank short loin ball tip picanha cow pork leberkas beef. Tongue brisket spare ribs boudin, kevin shank ham hock filet mignon alcatra pork loin. Ham rump venison pastrami swine, landjaeger leberkas pancetta brisket picanha chuck. Pancetta short loin alcatra pork loin jowl bresaola kielbasa shoulder bacon kevin ground round beef ribs frankfurter t-bone. Salami tongue jowl shankle, ball tip ham cow.
+        </p>
+
+        
+        <button id = 'buttonOne'>Click Me1!</button>
+        <button id = 'buttonTwo'>Click Me2!</button>
+        <button id = 'buttonThree'>Click Me3!</button>
+
+
+        <img src="http://s3-static-ak.buzzfed.com/static/campaign_images/webdr03/2013/9/18/10/41-reasons-why-pugs-are-the-most-majestic-creatur-1-11937-1379512969-0_big.jpg">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script> 
+
+    $('#buttonOne').on('click',function() {
+        $('#buttonOne').slideUp(1000).delay(500).slideDown(1000);
+    });
+    $('#buttonTwo').click(function() {
+        $('#buttonTwo').toggle('slow');
+    });
+    $('#buttonThree').click(function() {
+        $('#buttonThree').fadeOut('slow');
+    });
+
+</script>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

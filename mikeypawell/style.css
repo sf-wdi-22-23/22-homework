@@ -1,0 +1,23 @@
+#buttonOne  {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    background-color: #C37630;
+    border-radius: 5px;
+}
+
+#buttonTwo {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    background-color: #A32630;
+    border-radius: 5px;
+}
+
+#buttonThree {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    background-color: #F30620;
+    border-radius: 5px;
+}
