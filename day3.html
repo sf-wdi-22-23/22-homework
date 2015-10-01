@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+$(document).ready(function(){
+    $("button").click(function(){
+        $("div").animate({left: '250px'});
+    });
+});
+</script>
+</head>
+
+<body>
+
+<button>Start Animation</button>
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<br>
+<p>Mustache labore photo booth hashtag tattooed YOLO, High Life put a bird on it Pinterest. Sustainable mustache lomo sint, put a bird on it labore raw denim swag veniam letterpress ullamco tempor lo-fi. Cray bicycle rights Banksy, typewriter laborum taxidermy placeat health goth chia whatever. Bespoke organic fingerstache paleo odio fap mustache duis, lomo shabby chic dreamcatcher XOXO lo-fi. Minim selvage keffiyeh, duis retro elit cornhole. Post-ironic wayfarers single-origin coffee bespoke, fanny pack id vinyl biodiesel wolf magna nihil cliche gluten-free. XOXO High Life elit Bushwick adipisicing.</p>
+
+
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+</body>
+</html>
