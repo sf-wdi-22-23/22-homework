@@ -1,0 +1,43 @@
+h1{
+	color:blue;
+	text-align: center;
+    font-family: Vivaldi, Cursive;
+}
+button{
+	
+ 	height: 60px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #69D2E7;
+    text-align: center;
+    color: black;
+    font-family: Verdana, Arial, Sans-Serif;
+    margin-left: 300px;
+}
+p{
+	color: black;
+    font-family: Verdana, Arial, Sans-Serif;
+    text-align: center;
+    font-weight: bold;
+
+}
+#div1{
+	border-radius: 5px;
+	border-color: lightblue;
+	border-style: outset;
+	margin-top: 20px;
+	height: 200px;
+
+}
+#img2{
+	display: none;
+	margin-bottom: 50px;
+}
+#button2{
+	width: 150px;
+
+}
+#button3{
+	margin-top: 20px;
+	text-align: center;
+}
