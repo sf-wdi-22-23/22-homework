@@ -1,0 +1,26 @@
+#board {
+  margin-top: 10px;
+}
+.box {
+  border: 3px solid grey;
+  height: 150px;
+  font-size: 120px;
+}
+body {
+background: black;
+}
+h1 {
+	font-size: 55px;
+	font: grey;
+}
+div.board {
+	background: rgba(50, 50, 50, .5);
+}
+#a1 {
+	font-size: 120px;
+}
+
+button {
+	height: 145px;
+	width: 145px;
+}
