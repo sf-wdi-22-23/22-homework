@@ -1,0 +1,21 @@
+{
+  "name": "22-homework",
+  "version": "0.0.0",
+  "description": "First file",
+  "main": "sing.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RachaBella/22-homework.git"
+  },
+  "keywords": [
+    "WDI"
+  ],
+  "author": "Racha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RachaBella/22-homework/issues"
+  }
+}
