@@ -1,0 +1,16 @@
+#board {
+  margin-top: 10px;
+}
+
+.box {
+  border: 1px solid black;
+  height: 150px;
+  font-size: 24px;
+  text-align: center;
+  line-height: 150px;
+}
+
+#winOrLose {
+	font-size: 24px;
+	color: red;
+}
