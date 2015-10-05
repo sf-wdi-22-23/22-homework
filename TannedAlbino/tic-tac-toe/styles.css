@@ -1,0 +1,18 @@
+#board {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.box {
+  border: 5px solid black;
+  height: 150px;
+}
+.X {
+	background-image: "x.jpg";
+	color: #ff0000
+}
+.O {
+	background-image: "oFace.jpg";
+	color: #0000ff;
+
+}
