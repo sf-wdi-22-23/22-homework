@@ -1,0 +1,40 @@
+#board {
+  margin-top: 10px;
+  color: red;
+  text-align: center;
+  font-size: 80px;
+  vertical-align: center;
+  border: 3px solid black;
+}
+
+.box {
+  border: 3px dashed green;
+  height: 150px;
+}
+
+.p {
+	margin: 0 auto;
+	font-size: 25px;
+	font-family: (cursive, "Times New Roman");
+	color: blue;
+}
+
+.button {
+	text-align: center;
+	margin: 20px;
+}
+
+/*
+.playButton {
+	text-align: center;
+	vertical-align: center;
+	margin: 0 auto;
+	padding: 1em;
+	font-size: 80px;
+	color: green;
+	height: 2;
+	width: 2;
+	background-color: yellow;
+	<button id="playButton" class="playButton" type="button">X</button>
+}
+*/
