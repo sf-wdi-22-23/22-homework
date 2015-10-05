@@ -1,0 +1,59 @@
+#board {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.box {
+  border: 3px solid white;
+  cursor: crosshair;
+  font-size: 50px;
+  height: 150px;
+  padding: 38px 0;
+
+}
+
+#player1 {	color:white;
+}
+
+#player2 {	color:white;
+}
+
+
+#instructions {
+	color: white;
+}
+}
+.box:hover {
+	background-color: #FFFF66;
+}
+.X {
+  color: purple;
+  font-size:75px; 
+  padding:20px;
+}
+
+.O {
+  color: green;
+   font-size:75px; 
+  padding:20px;
+}
+
+
+.btn-default {
+  background-color: #3366FF;
+  border-color: #FF0066;
+  color:white;
+}
+
+.btn-default:hover {
+  background-color: #FFFF66;
+  border-color: #00FF00;
+}
+
+body {
+	background-color:black;
+}
+
+h1 {
+	color:white;
+}
