@@ -1,0 +1,70 @@
+body {
+  background: url("http://i.imgur.com/4pitMX1.jpg");
+  background-size: cover;
+  background-position: top;
+}
+
+h1 {
+  margin-top: 60px;
+  font-family: weston free;
+  font-size: 60px;
+  font-style: italic;
+  font-color: black;
+}
+
+h2 {
+  margin-top: -6px;
+  font-family: visby;
+  font-size: 25px;
+  font-weight: bold;
+  font-color: black;
+}
+
+#board {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.box {
+  border: 3px solid black;
+  cursor: pointer;
+  font-size: 90px;
+  height: 150px;
+  padding: 10px 0;
+}
+
+.X {
+  color: #000099;
+  font-family: weston free;
+  font-weight: bold;
+}
+
+.O {
+  color: #336666;
+  font-family: weston free;
+  font-weight: bold;
+}
+
+.btn {
+  display: center;
+  height: 70px;
+  width: 285px;
+  background-color: #336666;
+  font-size: 16px;
+  font-family: weston free;
+  font-color: white;
+  font-weight: bold;
+  text-align:center;
+  border-radius: 15px;
+}
+
+.btn-danger {
+  background-color: #000099;
+  border-color: #000099;
+}
+
+.btn-danger:hover {
+  background-color: #336666;
+  border-color: #336666;
+}
+
