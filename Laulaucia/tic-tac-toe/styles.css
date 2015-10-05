@@ -1,0 +1,38 @@
+body{
+	background-color: skyblue;
+}
+p {
+	text-align: center;
+
+}
+
+button {
+	width: 300px;
+	background-color: lavender;
+	padding: 20px;
+	border-radius: 20px;
+}
+
+h1{
+	font-size: 72px;
+}
+.box {
+  border: 10px solid black;
+  height: 150px;
+  text-align: center;
+  font-size: 72px;
+  padding: 10px;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 5px
+}
+
+.col-md-4 {
+
+}
+
+}
+
+#board {
+  
+}
