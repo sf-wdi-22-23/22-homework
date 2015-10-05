@@ -1,0 +1,25 @@
+#board {
+  margin-top: 10px;
+}
+
+.box {
+  border: 1px solid black;
+  height: 150px;
+  font-size: 100px;
+  text-align: center;
+}
+
+button{
+    height:30px;
+  width:70px;
+  background-color:deepskyblue;
+  font-family: arial;
+  color:white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-family: arial;
+}
