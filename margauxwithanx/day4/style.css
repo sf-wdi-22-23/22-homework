@@ -1,0 +1,19 @@
+p, ul, li {
+	font-family:chivo;
+	color: black;
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+	font-family: ImogenAgnes;
+	font-size: 120px;
+	color: #ff00cc;
+}
+p {
+	margin-top: 10%;
+}
+
+ul {
+	list-style: none;
+}
