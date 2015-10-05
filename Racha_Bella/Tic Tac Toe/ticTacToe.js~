@@ -48,6 +48,15 @@ $(document).ready(function(){
 				    }
 				     swal("Winner !", "X wins and the result is  O : "+ Owins + " and X : " + Xwins , "success")
 
+				}else if ((win == 2)&& (i ===9)){
+				     swal("No Winner !", " and the result is  O : "+ Owins + " and X : " + Xwins , "success")
+				     $( ".box" ).empty();
+				    for (var j=0;j<3;j++){
+				    	for(var k=0;k<3;k++){
+				    		tBoard[j][k]=null;
+				    	}
+				    }	
+	
 				}
 
 				if (i===9){
@@ -195,7 +204,7 @@ $(document).ready(function(){
    	 		((tBoard[0][2]=='O') && (tBoard[1][1]=='O')&& (tBoard[2][0]=='O'))
 
    	 		){
-   	 	  	swal("Good job!", "You clicked the button!", "success")
+   	 	  	
    	 	  	return O;
    	 	} else return noWinner;
    }// end of the function
