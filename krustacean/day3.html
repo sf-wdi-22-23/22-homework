@@ -60,8 +60,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     <script type="text/javascript">
-    $( "#textbutton" ).click(function() {
-      $("#lorem").hide( "slow" );
+    $( "img" ).click(function() {
+      $(this).hide( "slow" );
     });
     $( "#showtextbutton" ).click(function() {
       $("#lorem").show( "slow" );
@@ -73,10 +73,10 @@
       $("#oldman").slideUp( "slow" );
     });
     $( "#show-oldman" ).click(function() {
-      $("#oldman").slideDown( "slow" );
+      $(this).hide( "slow" );
     });
     $( "#bridge_button" ).click(function() {
-      $("#bridge_pic").hide( "slow" );
+      $("#bridge_pic").fadeOut( "slow" );
     });
     </script>
   </body>
