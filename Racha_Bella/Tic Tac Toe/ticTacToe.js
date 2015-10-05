@@ -29,34 +29,35 @@ $(document).ready(function(){
 				if (win == 0){
 					Owins++;
 					i=0;
-					$( ".box" ).empty();
+					
 				    for (var j=0;j<3;j++){
 				    	for(var k=0;k<3;k++){
 				    		tBoard[j][k]=null;
 				    	}
 				    }
 				    swal("Winner !", "O wins and the result is  O : "+ Owins + " and X : " + Xwins , "success")
-
+			            $( ".box" ).empty();
 				}
 				else if (win == 1){
 					Xwins++;
 					i=0;
-					$( ".box" ).empty();
+					
 				    for (var j=0;j<3;j++){
 				    	for(var k=0;k<3;k++){
 				    		tBoard[j][k]=null;
 				    	}
 				    }
 				     swal("Winner !", "X wins and the result is  O : "+ Owins + " and X : " + Xwins , "success")
-
+  				     $( ".box" ).empty();
 				}else if ((win == 2)&& (i ===9)){
 				     swal("No Winner !", " and the result is  O : "+ Owins + " and X : " + Xwins , "success")
-				     $( ".box" ).empty();
+				     
 				    for (var j=0;j<3;j++){
 				    	for(var k=0;k<3;k++){
 				    		tBoard[j][k]=null;
 				    	}
-				    }	
+				    }
+				     $( ".box" ).empty();	
 	
 				}
 
