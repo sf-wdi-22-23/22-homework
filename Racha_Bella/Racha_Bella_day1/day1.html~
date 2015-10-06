@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <link rel="stylesheet" href="styles.css" type="text/css"/>
+   <title> My first day at GA</title>
+</head>
+<body class ="body">
+<div id="div1">
+<h1 class ="h1"> What I have learned</h1>
+
+
+<div id="container">
+<ol id="list">
+  <li >  An overview of what is waiting for us </li>
+  <li id="list2">  What are my responsibilities </li>
+  <li>  Client/Server </li>
+  <li >  Chrome developer tools </li>
+  <li> An update of my TODO list </li>
+  <li> New mates :)</li>
+</ol>
+</div>
+</div>
+</body>
+
+ <footer>
+  <div>
+  <ul id="social">
+    <li> <a href="https://twitter.com/Racha__Bella"> My twitter</li>
+    <li> <a href=""> My facebook </li>
+  </ul>
+  </div>
+</footer>
+
+</html>
+

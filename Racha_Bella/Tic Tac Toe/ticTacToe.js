@@ -11,66 +11,79 @@ $(document).ready(function(){
    		console.log('i am here');
 		$(".box").click(function(event) {
 	         id= event.target.id;
-	         console.log('the id' + id);
-	         $(this).data('clicked', true);
-	         console.log('clicked');
-	         if (turn =='X'){
-	         	console.log('turn X');
-	         	tBoard = draw(id,'X');
-	         	turn ='O';
-	         }else if (turn =="O"){
-	         	console.log('turn O');
-	         	tBoard= draw(id,'O');
-	         	turn ='X';
-	         }
-	         i++;
-	         	console.log('the i of the if is '+ i);
-				win=winOrContinue(tBoard);
-				if (win == 0){
-					Owins++;
-					i=0;
-					$( ".box" ).empty();
-				    for (var j=0;j<3;j++){
-				    	for(var k=0;k<3;k++){
-				    		tBoard[j][k]=null;
-				    	}
-				    }
-				    swal("Winner !", "O wins and the result is  O : "+ Owins + " and X : " + Xwins , "success")
+           if ($('#'+id).html()=='')
+           {
+            console.log('emptyyyyy');
+            console.log('the id' + id);
+           $(this).data('clicked', true);
+           console.log('clicked');
+           if (turn =='X'){
+            console.log('turn X');
+            tBoard = draw(id,'X');
+            turn ='O';
+           }else if (turn =="O"){
+            console.log('turn O');
+            tBoard= draw(id,'O');
+            turn ='X';
+           }
+           i++;
+            console.log('the i of the if is '+ i);
+        win=winOrContinue(tBoard);
+        if (win == 0){
+          Owins++;
+          i=0;
+          
+            for (var j=0;j<3;j++){
+              for(var k=0;k<3;k++){
+                tBoard[j][k]=null;
+              }
+            }
+            swal("Winner !", "O wins and the result is  O : "+ Owins + " and X : " + Xwins , "success");
+                  $( ".box" ).empty();
+        }
+        else if (win == 1){
+          Xwins++;
+          i=0;
+          
+            for (var j=0;j<3;j++){
+              for(var k=0;k<3;k++){
+                tBoard[j][k]=null;
+              }
+            }
+             swal("Winner !", "X wins and the result is  O : "+ Owins + " and X : " + Xwins , "success");
+               $( ".box" ).empty();
+        }else if ((win == 2)&& (i ===9)){
+             swal("No Winner !", " and the result is  O : "+ Owins + " and X : " + Xwins , "success");
+             
+            for (var j=0;j<3;j++){
+              for(var k=0;k<3;k++){
+                tBoard[j][k]=null;
+              }
+            }
+             $( ".box" ).empty(); 
+  
+        }
 
-				}
-				else if (win == 1){
-					Xwins++;
-					i=0;
-					$( ".box" ).empty();
-				    for (var j=0;j<3;j++){
-				    	for(var k=0;k<3;k++){
-				    		tBoard[j][k]=null;
-				    	}
-				    }
-				     swal("Winner !", "X wins and the result is  O : "+ Owins + " and X : " + Xwins , "success")
-
-				}else if ((win == 2)&& (i ===9)){
-				     swal("No Winner !", " and the result is  O : "+ Owins + " and X : " + Xwins , "success")
-				     $( ".box" ).empty();
-				    for (var j=0;j<3;j++){
-				    	for(var k=0;k<3;k++){
-				    		tBoard[j][k]=null;
-				    	}
-				    }	
-	
-				}
-
-				if (i===9){
-					i=0;
-				}
-			console.log('the i is '+ i);
-	     });
+        if (i===9){
+          i=0;
+        }
+      console.log('the i is '+ i);
+           }else {
+            swal("You clicked on a box already full !!", "Try another one :)");
+            if (turn =='X'){
+              turn ='X';
+            }else turn ='O';
+           }
+	         
+	    });
   $("#reset").on("click", function(){
   	var i,j;
     $( ".box" ).empty();
     for (i=0;i<3;i++){
     	for(j=0;j<3;j++){
     		tBoard[i][j]=null;
+        Xwins=0;
+        Owins=0;
     	}
     }
 
