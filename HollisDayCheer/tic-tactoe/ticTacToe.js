@@ -14,7 +14,7 @@ $(document).ready(function(){
   // all code to manipulate the DOM
   // goes inside this function
   $(".box").on("click", function(){
-  if($(this).text() !== "X" && $(this).text() !== "O"){
+  if($(this).text() !== "X" && $(this).text() !== "O" && !foundWinner){
   		if(activePlayer===p1){
   			$(this).text("X");
   			classDef = $(this);
@@ -34,7 +34,7 @@ $(document).ready(function(){
   			if($(this).hasClass(i)){
   				solSet[i].push(activePlayer);
   				console.log(solSet[i][0]);
-  				if(solSet[i][0]== solSet[i][1] && solSet[i][1]== solSet[i][2] && !foundWinner){
+  				if(solSet[i][0]== solSet[i][1] && solSet[i][1]== solSet[i][2] ){
   					console.log("HELLLO");
   					$("#curWinner").text("Last Winner was: " + activePlayer);
   					wins[activePlayer]+=1;
