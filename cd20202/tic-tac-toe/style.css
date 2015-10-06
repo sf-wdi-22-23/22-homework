@@ -1,0 +1,90 @@
+/*
+-----added styling for default page----- 
+*/
+html, body {
+	height: 100%;
+	background-image: url("http://i.imgur.com/D7RDrtq.jpg");
+	background-size: 100% 100%;
+}
+button {
+	margin: auto;
+	display: inline;
+	text-align: center;
+	background-color: gainsboro;
+	height: 80px;
+	width: 120px;
+}
+.gamePiece {
+	border: 1px solid black;
+  	cursor: pointer;
+  	font-size: 50px;
+ 	height: 100px;
+ 	padding: 38px 0;
+}
+button.scoreX {
+	height: 80px;
+	width: 80px;
+	margin: 20px 0px 8px 0px;
+}
+button.scoreO {
+	height: 80px;
+	width: 80px;
+	margin: 20px 0px 8px 0px;
+}
+button#playTurn {
+	height: 80px;
+	width: 150px;
+	margin: 20px 0px 8px 0px;
+	font-size: 20px;
+}
+button#reset {
+	height: 30px;
+	width: 60px;
+	margin-top: 10px;
+	box-shadow: 0px 2px 3px 0px black;
+}
+
+div.container {
+	background-color: rgba(192, 192, 192, .9);
+	height: inherit;
+	min-width: 700px;
+	max-width: 900px;
+}
+h1 {
+	padding: 7px 0px 0px 0px;
+	font-family: cursive;
+	font-size: 70px;
+}
+hr {
+	border-color: black;
+}
+p {
+	font-family: cursive;
+}
+p#taunt {
+	margin: 30px 0px 0px 0px;
+	font-size: 20px;
+}
+/*
+------CSS style classes to be added with events-------
+*/
+.X {
+	color: cornflowerblue;
+	font-family: cursive;
+	font-size: 40px;
+}
+.O {
+	color: firebrick;
+	font-family: cursive;
+	font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+
