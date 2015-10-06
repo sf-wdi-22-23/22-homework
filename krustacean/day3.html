@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+      <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h2><small>Day 3 Html</small></h2>
+          <p id="lorem">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <div class="btn-group btn-group-md">
+            <button type="button" class="btn btn-default" id="textbutton">
+              Hide Text
+            </button>
+          </div>
+          <div class="btn-group btn-group-md">
+            <button type="button" class="btn btn-default" id="showtextbutton">
+              Show Text
+            </button>
+          </div>
+          <div class="btn-group btn-group-md">
+            <button type="button" class="btn btn-default" id="textcolor">
+              Change Text Color
+            </button>
+          </div>
+          <img src="https://farm6.staticflickr.com/5135/5516993121_10f879e777_b.jpg" width="400" height="600" alt="Karl Oskar Lööw, Fredhäll, Uppland, Sweden" id="oldman">
+          <div class="btn-group btn-group-md">
+            <button type="button" class="btn btn-default" id="man">
+              Hide Image
+            </button>
+          </div>
+          <div class="btn-group btn-group-md">
+            <button type="button" class="btn btn-default" id="show-oldman">
+              Show Image
+            </button>
+          <img src="https://c2.staticflickr.com/6/5648/21214486023_097ea15094_z.jpg" alt="" id="bridge_pic">
+          <div class="btn-group btn-group-md">
+            <button type="button" class="btn btn-default" id="bridge_button">
+              Hide Image
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+    $( "#textbutton" ).click(function() {
+      $("#lorem").hide( "slow" );
+    });
+    $( "#showtextbutton" ).click(function() {
+      $("#lorem").show( "slow" );
+    });
+    $( "#textcolor" ).click(function() {
+      $("#lorem").css("color","red");
+    });
+    $( "#man" ).click(function() {
+      $("#oldman").slideUp( "slow" );
+    });
+    $( "#show-oldman" ).click(function() {
+      $("#oldman").slideDown( "slow" );
+    });
+    $( "#bridge_button" ).click(function() {
+      $("#bridge_pic").hide( "slow" );
+    });
+    </script>
+  </body>
+</html>
