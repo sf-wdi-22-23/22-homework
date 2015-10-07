@@ -1,3 +1,7 @@
+title { 
+
+}
+
 #board {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -18,16 +22,4 @@
 .O {
   font-size:75px;
   color: #86C543;
-}
-
-.btn-danger {
-  height: 75px;
-  width: 125px;
-  background-color: #A8CB17;
-  border-color: #A8CB17;
-}
-
-.btn-danger:hover {
-  background-color: #17649A;
-  border-color: #17649A;
 }
