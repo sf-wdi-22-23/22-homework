@@ -98,8 +98,8 @@ function initMap() {
     title: "General Assembly"
   	});
 
-	var image = 'ga_cog.png';
-  	var gaMarker = new google.maps.Marker({
+	var image = {'ga_cog.png'};
+  var gaMarker = new google.maps.Marker({
     position: {lat: 37.790841, lng: -122.401280},
     map: map,
     icon: image
