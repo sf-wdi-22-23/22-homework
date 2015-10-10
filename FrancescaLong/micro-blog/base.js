@@ -18,6 +18,7 @@ $("#submitButton").on("click", function(){
 });
 
 console.log(posts());
+console.log("test");
 
 
 /*
