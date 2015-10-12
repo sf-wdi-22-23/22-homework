@@ -2,19 +2,67 @@ console.log("Sanity Check: JS is working!");
 
 $(document).ready(function(){
 
-var counter = 0;
+var counter = 1;
 
 /* variables used in the code */
-  var posts = {
-  	input: "",
+/*
+var posts = {
+  	postText: "",
   	counter: counter++,
   	postDateTime: ""
   };
+*/
 
-posts.input = "test1",
-posts.counter = 1,
-posts.postDateTime = new Date()
+function Posts(postText, counter, postDateTime)  {
+  	this.postText = "";
+  	this.counter = 0;
+  	this.postDateTime = new Date();
+  }
 
+
+
+$("#submitButton").on("click", function(){
+	event.preventDefault();
+	//console.log("button was clicked");
+	var value = $("#inputBox").val();
+	console.log(value);
+	var newInput = new Posts(value, Posts.length + 1, new Date());
+	//Posts.postText = new value;
+	//Posts.counter = new Posts.counter++;
+	//Posts.postDateTime = new Date();
+	console.log(Posts);
+});
+
+/*
+$("#inputBox").on("click", "button", function(){}
+
+$( "input" )
+  .keyup(function() {
+    var value = $( this ).val();
+    $( "p" ).text( value );
+  })
+  .keyup();
+*/
+
+
+/*
+$("#submitButton").on("click", function(){
+  		event.preventDefault();
+  		Posts.postText = "#inputBox".val(),
+  		Posts.counter = Posts.counter++,
+  		Posts.postDateTime = new Date()
+});
+*/
+
+
+/*
+Posts.postText = "test1",
+Posts.counter = counter++,
+Posts.postDateTime = new Date()
+
+console.log(Posts);
+console.log(Posts[0]);
+/*
 
 /* internet solution 2 - also fails to put anyting into the object
 var data = $('#form').serializeArray().reduce(function(posts, input) {
@@ -40,9 +88,7 @@ $("#submitButton").on("click", function(){
   		posts.postDateTime = new Date()
 });
 */
-console.log(posts);
-console.log(data);
-alert(posts[0]);
+
 
 
 /*
