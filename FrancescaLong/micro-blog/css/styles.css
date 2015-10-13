@@ -1,7 +1,13 @@
 body {
   color: #333;
   font-family: Helvetica, Arial, sans-serif;
-  background-color: skyblue; /* Sanity Check! */
+  background-color: limegreen; /* Sanity Check! */
+  /*background-image: url("images/charlie.jpg"); */
+  background-position: center;
+  background-size: 12em;
+  color: black;
+  font-weight: 900;
+  opacity: 100%;
 }
 
 h1 {
@@ -11,4 +17,8 @@ h1 {
 
 h3 {
 	text-align: center;
+}
+
+button {
+	color: black;
 }

@@ -2,36 +2,114 @@ console.log("Sanity Check: JS is working!");
 
 $(document).ready(function(){
 
-var counter = 1;
+//var counter = 1;
 
 /* variables used in the code */
-/*
-var posts = {
-  	postText: "",
-  	counter: counter++,
-  	postDateTime: ""
-  };
-*/
 
-function Posts(postText, counter, postDateTime)  {
-  	this.postText = "";
-  	this.counter = 0;
-  	this.postDateTime = new Date();
-  }
+function MicroBlog(){
+	this.posts = [];	//our backing array of entries
+
+	// use JQuery selectors to find the important elements
+	// (text box, button, list box)
+	this.$submitButton = $('.btn');
+	this.$entry = $('#myText');
+	this.$blogDiv = $('.list-group');
+
+	//assign onclick handler to button and connect to our createItem() function
+	var blog = this;
+
+	this.$submitButton.on('click', function(event){
+		event.preventDefault();
+		blog.createItem(blog.$entry.val());
+		var value = $("#inputBox").val();
+		var html = posts.unshift("<li class='postsToPresent'>" + value + "<span class='glyphicon glyphicon-remove pull-right'></span></li>");
+
+		alert(posts);
+		console.log(posts);
+
+		console.log($(posts).length);
+		});
+
+}
 
 
+/* Get the information entered into the website
+   and put it into an object. Create a counter so 
+   we can track how many entries have been made and
+   include a timestamp so we know when each entry was
+   posted.
+ */
 
+ /*
 $("#submitButton").on("click", function(){
 	event.preventDefault();
-	//console.log("button was clicked");
 	var value = $("#inputBox").val();
-	console.log(value);
-	var newInput = new Posts(value, Posts.length + 1, new Date());
-	//Posts.postText = new value;
-	//Posts.counter = new Posts.counter++;
-	//Posts.postDateTime = new Date();
-	console.log(Posts);
+	var html = posts.unshift("<li class='postsToPresent'>" + value + "<span class='glyphicon glyphicon-remove pull-right'></span></li>");
+
+	alert(posts);
+	console.log(posts);
+
+	console.log($(posts).length);
 });
+*/
+	
+/*
+MicroBlog.prototype.render = function(post){
+	// construct HTML string
+	var html = "<li class='postsToPresent'>" + posts + "<span class='glyphicon glyphicon-remove pull-right'></span></li>";
+	// put it on DOM
+	this.$blogDiv.append(html);
+	// clear the contents of the form
+	this.$value.val('');
+	// add event listener to the delete glyphicon
+	// TODO: dynamic event listeners that don't need to be called later
+	this.listenToDelete();
+};	
+*/
+
+
+$.ajax({
+  url: "index.html",
+  context: document.ul
+}).done(function() {
+  $( this ).addClass( "postsToPresent" );
+});
+
+
+
+});
+
+/*
+$.ajax({
+  url: "test.html",
+  context: document.body
+}).done(function() {
+  $( this ).addClass( "done" );
+});
+*/
+
+
+/*
+	$.getJSON( "ajax/test.json", function( data ) {
+  	var items = posts;
+  	$.each( data, function( key, val ) {
+    items.push( "<li id='" + key + "'>" + val + "</li>" );
+  	});
+ 
+  	$( "<ul/>", {
+    "class": "postsToPresent",
+    html: items.join( "" )
+  	}).appendTo( "ul" );
+});
+});
+*/
+
+
+
+/*
+var jsonobj = eval("(" + postsToPresent + ")");
+var postArray = jsonobj["postsToPresent"];
+*/
 
 /*
 $("#inputBox").on("click", "button", function(){}
@@ -107,4 +185,4 @@ $("#submitButton").on("click", function(){
 
 
 
-});
+
