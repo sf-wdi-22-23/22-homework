@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<!-- set viewport to device width to allow responsiveness -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		  <!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- custom styles (always require after Bootstrap) -->
+	<!-- <link rel="stylesheet" href="style.css"> -->
+
+	<title>Day 3</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<style>
+		.col-md-6 {
+			background-color: gray;
+		}
+		button {
+			background-color: CornFlowerBlue;
+			height: 130px;
+			width: 130px;
+		}
+		.pic1 {
+			background-image: url("http://icons.iconarchive.com/icons/fasticon/beach/128/sun-icon.png");
+		}
+		.pic2 {
+			background-image: url("http://b.dryicons.com/images/icon_sets/coquette_part_8_icons_set/png/128x128/sun_clouds_thunder.png");
+		}
+		.pic3 {
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-3 col-md-6">
+				<button id="1">Toggle Show</button>
+				<button class="pic2" id="2">Toggle Hide</button>
+				<button id="3">Toggle Color Change</button>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function() {
+			//alert($('button').length);
+			var el = $('#1');
+			var ell = $('#2');
+			var eel	= $('#3');
+			el.on('click', function() {
+				$(this).toggleClass('pic1');
+				
+			});
+			ell.on('click', function() {
+				$(this).toggleClass('pic2');				
+			});
+			eel.on('click', function() {
+				$(this).toggleClass('pic3');
+				
+			});
+		});
+	</script>
+</body>

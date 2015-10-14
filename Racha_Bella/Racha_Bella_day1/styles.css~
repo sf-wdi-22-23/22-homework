@@ -1,0 +1,29 @@
+body {
+ background: url(http://sanfranciscodeluxetours.com/images/sfdeluxe-gal-img-51.jpg) top center no-repeat;
+}
+#div1 {	
+ float: right;
+ margin-right: 20px;
+}
+h1 {
+ font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+ color: #fefefb;
+}
+#container {
+ border-radius: 4px ;
+ border-color: rgba(5, 139, 127, 0.4);
+ padding: 20px;
+ float: right;
+ position: relative;
+ margin-right: 20px;
+}
+#list {
+ color: #170b35;
+ font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+ font-weight: bold;
+}
+
+a{
+ text-decoration: none;
+ font-weight: bold;
+}

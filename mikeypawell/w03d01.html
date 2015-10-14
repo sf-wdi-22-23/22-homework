@@ -1,0 +1,79 @@
+Say we want to create an API similar to the one above, that returns data about icecream. We need to be able to get information about specific flavors, as well as all of the flavors we have in our database. We also want to get some flavors by category, like "fruity", "gluten free", or "chunky". Finally we want to add one POST route that allows users of our api to add new flavors!
+
+Write Pseudocode like the above. Be creative, and follow RESTful conventions and best practices.
+
+Ice Cream: [
+
+	Description: { 
+		flavor: "chocolate chunk",
+		characterstic: "chunky",
+		price: "$6",
+
+	}
+
+	Description: { 
+		flavor: "vanilla bean",
+		characterstic: "smooth",
+		price: "$5",
+
+	}
+
+	Description: { 
+		flavor: "peanut butter cup",
+		characterstic: "chunky",
+		price: "$6",
+
+	}
+
+	Description: { 
+		flavor: "strawbery sorbet" ,
+		characterstic: "gluten free",
+		price: "$4",
+
+	}
+
+]
+
+
+GET ALL ICE CREAM and DESCRIPTIONS "/ice-cream"
+
+GET ICE CREAM BY FLAVOR "/ice-cream/:flavor"
+
+GET ALL CHUNKY ICE CREAMS "/ice-cream/:chunky"
+
+GET ICE CREAM PRICES: "/ice-cream/:price",
+
+POST {base_URL}/ice-cream
+
+Ice Cream: [
+
+Request body: 
+
+	Description: { 
+		flavor: "Hannah Bannana",
+		characterstic: "extra chunky",
+		price: "$8",
+	}
+]
+ 
+
+
+
+
+
+
+
+
+]
+/*
+
+
+
+
+
+
+
+
+
+
+*/ 

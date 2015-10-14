@@ -1,0 +1,25 @@
+title { 
+
+}
+
+#board {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.box {
+  border: 1px solid black;
+  font-size: 50px;
+  height: 150px;
+  padding: 38px 0;
+}
+
+.X {
+  font-size: 75px;
+  color: #D54A5C;
+}
+
+.O {
+  font-size:75px;
+  color: #86C543;
+}

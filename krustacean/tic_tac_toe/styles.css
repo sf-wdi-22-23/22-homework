@@ -1,0 +1,27 @@
+#board {
+  margin-top: 10px;
+  background-color: cornsilk;
+}
+
+.box {
+  border: 2px solid black;
+  height: 150px;
+}
+
+.box img{
+  max-width: 99%;
+  padding-top: 5px;
+}
+
+.box:hover {
+  background-color:aliceblue;
+ }
+
+body {
+  background-color: lightblue;
+}
+
+
+#playerone {
+  background-color: green;
+}
