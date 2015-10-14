@@ -5,7 +5,7 @@ $(document).ready(function(){
 //var counter = 1;
 
 /* variables used in the code */
-
+/*
 function MicroBlog(){
 	this.posts = [];	//our backing array of entries
 
@@ -17,7 +17,11 @@ function MicroBlog(){
 
 	//assign onclick handler to button and connect to our createItem() function
 	var blog = this;
+}
+*/
 
+
+/*
 	this.$submitButton.on('click', function(event){
 		event.preventDefault();
 		blog.createItem(blog.$entry.val());
@@ -31,7 +35,7 @@ function MicroBlog(){
 		});
 
 }
-
+*/
 
 /* Get the information entered into the website
    and put it into an object. Create a counter so 
@@ -40,19 +44,22 @@ function MicroBlog(){
    posted.
  */
 
- /*
+ var posts = [];
+
 $("#submitButton").on("click", function(){
 	event.preventDefault();
 	var value = $("#inputBox").val();
 	var html = posts.unshift("<li class='postsToPresent'>" + value + "<span class='glyphicon glyphicon-remove pull-right'></span></li>");
-
+	$("ul").append(posts[0]);
 	alert(posts);
-	console.log(posts);
+	//console.log(posts);
 
-	console.log($(posts).length);
+	//console.log($(posts).length);
+	});
 });
-*/
-	
+
+$("#display10").
+
 /*
 MicroBlog.prototype.render = function(post){
 	// construct HTML string
@@ -67,17 +74,17 @@ MicroBlog.prototype.render = function(post){
 };	
 */
 
-
+/*
 $.ajax({
   url: "index.html",
   context: document.ul
 }).done(function() {
   $( this ).addClass( "postsToPresent" );
 });
+*/
 
 
 
-});
 
 /*
 $.ajax({

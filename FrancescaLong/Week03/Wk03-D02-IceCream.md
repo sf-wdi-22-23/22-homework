@@ -23,3 +23,6 @@ POST A NEW FLAVOR "
 		id: assigned by database (max id number + 1)
 		type id: assigned database (max id number + 1)
 		"
+
+
+		
