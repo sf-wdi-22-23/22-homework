@@ -1,0 +1,5 @@
+
+	GET ALL FLAVORS 			iceCreams/flavors
+	GET SPECIFIC FLAVOR 		iceCreams/flavors/flavor
+	GET FLAVORS BY CATEGORY		iceCreams/category/flavors
+	POST NEW FLAVOR 			iceCreams/flavors/flavor
