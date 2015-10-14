@@ -70,6 +70,7 @@ $(document).ready(function(){
       console.log('the i is '+ i);
            }else {
             swal("You clicked on a box already full !!", "Try another one :)");
+            
             if (turn =='X'){
               turn ='X';
             }else turn ='O';

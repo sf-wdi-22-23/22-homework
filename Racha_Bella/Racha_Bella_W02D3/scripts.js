@@ -19,7 +19,7 @@ function initMap() {
     map: map,
     title: 'GA!',
     icon :img,
-    title: 'GA'
+    
 
   });
   var infowindow = new google.maps.InfoWindow({
