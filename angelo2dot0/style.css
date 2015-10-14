@@ -5,7 +5,9 @@
 .row {
 	border: 3px solid green;
 }
-.row .col-sm-6 {
+.row .col-md-6 {
 	border: 3px solid yellow;
 }
-
+img {
+height: 200px
+}
