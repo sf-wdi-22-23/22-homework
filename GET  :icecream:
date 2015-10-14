@@ -1,0 +1,6 @@
+GET  /icecream/
+GET  /icecream/flavors
+GET  /icecream/flavors/:fruity
+GET  /icecream/flavors/:gluten%20free
+GET  /icecream/flavors/:chunky
+POST /icecream/flavors/ :new flavor
