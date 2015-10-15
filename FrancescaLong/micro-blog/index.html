@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Francesca's Micro-Blog</title>
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- VENDOR SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- APPLICATION SCRIPTS -->
+    <script src="base.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <!-- HEADERS -->
+          <h1>Welcome to my fabulous micro-blog!</h1>
+          <h3>Post anything that pops into your mind.</h3>
+          <br>
+        </div>
+        <div>
+          <container>
+            <!-- INPUT BOX AND SUBMIT BUTTON -->
+            <p></p>
+            <form method="POST">
+              <label for "label"></label>            
+              <input type="text" id="inputBox" size="120" maxlength="150" placeholder="Top of mind at the moment..."></text> <!-- name="postText"  -->
+              <br><br>
+              <input type="submit" id="submitButton" value="Share with the world">
+            </form>
+          </container>
+          <br><br>
+          <container>
+            <label>Last 10 entries...</label>
+            <div class="list-group">
+              <ul class="postsToPresent">
+                              </ul>
+            </div>
+          </container>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
