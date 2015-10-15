@@ -1,4 +1,4 @@
-#SF-WDI-22 Homework submission
+#Brian Gabot's Homework repo
 
 Homework will be turned in to your fork of this repository daily.
 
