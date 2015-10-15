@@ -1,0 +1,10 @@
+icecream / Rest service 
+Get all flavors : "GET /flavors"
+Get specific flavor : "GET /flavors/:id" or since it's a unique flavor, we can give a name to each flavor and get it : 
+  "GET /flavors/:name" 
+Get flavor by category : "GET /categories/:id/flavors" ex : if fruity has an id=1 : "GET categories/1/flavors"  // all the fruity flavors
+Add a new flavor : 
+		"Post /flavors
+		<flavor>
+			<name>Chocolate</name>
+		</flavor>
