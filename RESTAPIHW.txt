@@ -1,9 +1,0 @@
-Say we want to create an API similar to the one above, that returns data about icecream. We need to be able to get information about specific flavors, as well as all of the flavors we have in our database. We also want to get some flavors by category, like "fruity", "gluten free", or "chunky". Finally we want to add one POST route that allows users of our api to add new flavors!
-
-//GET ICECREAM: GET "/icecream"
-
-//GET ICECREAM FLAVOR: GET "/icecream/chocolate"
-
-//GET ICECREAM FLAVOR BY CATEGORY: GET "/icecream/flavors/:category/" 
-
-//POST ROUTE TO ADD NEW FLAVORS: POST "/flavors"
