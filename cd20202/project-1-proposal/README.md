@@ -36,15 +36,25 @@ mark requests as done,Rate Users, cool styling, interactive background?
 
 ##Milestones:
 create views w/ index.ejs
+
 create login/sign up form
+
 Create Server.js
+
 create public folder w/ JS and CSS files
+
 create routes to index page
+
 create CS-JS to get form data
+
 Post form data to DB
+
 Render posts to page
+
 create user/guide ejs page to be rendered
+
 make routes to user/guide pages 
+
 authentication?
 
 
