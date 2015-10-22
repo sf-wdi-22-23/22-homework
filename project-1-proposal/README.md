@@ -1,5 +1,8 @@
 What Type of RPG CLASS ARE YOU APP
 
+
+TRELLO BOARD: https://trello.com/b/ONtVXgC9/project-1
+
 I am planning to build an app game that will determine what type of rpg class the user is based on their decisions. Their decisions will be based on a series of images shown on the site. A user will be given a choice: YES or NO.
 
 Once the user chooses an answer, they will be shown another image and given another question to answer,
