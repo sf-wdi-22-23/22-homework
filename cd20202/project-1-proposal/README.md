@@ -1,8 +1,6 @@
-#### Project 1 Proposal
+# Project 1 Proposal
 
-###Idea: 
-
-(Kinda Like) UBER for Tour Guides.
+###Idea: (Kinda Like) UBER for Tour Guides.
 
 Quick and Easy way to find Tour Guides in the city  
 
