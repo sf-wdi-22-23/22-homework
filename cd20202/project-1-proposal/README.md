@@ -2,14 +2,16 @@
 
 ###Idea: 
 
-USHIP (Kinda) for Tour Guides.
+(Kinda Like) UBER for Tour Guides.
+
 Quick and Easy way to find Tour Guides in the city  
 
 ##Wireframes:
 
-In wireframe folder.
+Check wireframe images.
 
 ##User Stories:
+
 I'm Uriel the User and I want tot find a tour guide in SF for 20 cash.
 
 I'm Tony the Tour Guide and I'm looking to take someone on a tour of SF for 40 cash.
@@ -22,20 +24,29 @@ I'm Uriel and I wasn't impressed with Terry. I rate her tour guide performance 2
 
 ##Models:
 
-User
-Full Name: String, Email: String, Username: String, Password: String, tour guide: Boolean
-Request
-City: String, Date: Date, Time: String, Place: String, Price: Number
+Check model relation image.
 
-#Scope:
+##Scope:
 
 Base: 
 Planning, Create Wireframe site, create routes, post/get data to/from database, authentication, accept jobs
+
 Strech: 
-Rate Users, mark requests as done, cool styling, interactive background?
+mark requests as done,Rate Users, cool styling, interactive background?
 
 ##Milestones:
-Get Approved, Hello World, Save and Render Data, Authentication, API Calls?, Styling?
+create views w/ index.ejs
+create login/sign up form
+Create Server.js
+create public folder w/ JS and CSS files
+create routes to index page
+create CS-JS to get form data
+Post form data to DB
+Render posts to page
+create user/guide ejs page to be rendered
+make routes to user/guide pages 
+authentication?
+
 
 ##Feasibility Check:
 -Totally Feasible
