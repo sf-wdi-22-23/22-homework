@@ -22,26 +22,23 @@ I'm Uriel and I wasn't impressed with Terry. I rate her tour guide performance 2
 
 ##Models:
 
-#User
+User
 Full Name: String, Email: String, Username: String, Password: String, tour guide: Boolean
-
-#Request
+Request
 City: String, Date: Date, Time: String, Place: String, Price: Number
 
-##Scope:
+#Scope:
 
-#Base: 
+Base: 
 Planning, Create Wireframe site, create routes, post/get data to/from database, authentication, accept jobs
-
-#Strech: 
+Strech: 
 Rate Users, mark requests as done, cool styling, interactive background?
 
 ##Milestones:
 Get Approved, Hello World, Save and Render Data, Authentication, API Calls?, Styling?
 
 ##Feasibility Check:
-
-#-Totally Feasible
+-Totally Feasible
 
 
 
