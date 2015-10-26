@@ -1,51 +1,234 @@
-body{
-    background:url('http://www.wallpaperup.com/uploads/wallpapers/2012/10/21/20181/cad2441dd3252cf53f12154412286ba0.jpg');
-    padding:50px;
-}
-
-#login-dp{
-    min-width: 250px;
-    padding: 14px 14px 0;
-    overflow:hidden;
-    background-color:rgba(255,255,255,.8);
-}
-#login-dp .help-block{
-    font-size:12px    
-}
-#login-dp .bottom{
-    background-color:rgba(255,255,255,.8);
-    border-top:1px solid #ddd;
-    clear:both;
-    padding:14px;
-}
-#login-dp .social-buttons{
-    margin:12px 0    
-}
-#login-dp .social-buttons a{
-    width: 49%;
-}
-#login-dp .form-group {
-    margin-bottom: 10px;
-}
-.btn-fb{
-    color: #fff;
-    background-color:#3b5998;
-}
-.btn-fb:hover{
-    color: #fff;
-    background-color:#496ebc 
-}
-.btn-tw{
-    color: #fff;
-    background-color:#55acee;
-}
-.btn-tw:hover{
-    color: #fff;
-    background-color:#59b5fa;
-}
-
-    #login-dp .bottom{
-        background-color: inherit;
-        border-top:0 none;
+body {
+    background: #f7f7f7;
+    background-size: cover;
+    background-position: top;
+    font-size: 100%;
+    font-family: 'Didact Gothic', sans-serif;    
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0;
+    text-shadow: none;
+    line-height: 1.5;
     }
+}
+
+* {
+    box-sizing: border-box;
+   font-family: 'Didact Gothic', sans-serif;
+}
+
+::-webkit-input-placeholder {
+   font-family: 'Didact Gothic', sans-serif;
+}
+
+#wrapper {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: #fff;
+    border-bottom: thin solid #ededed;
+}
+
+header #header-inner {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header #logo {
+    float: left;
+    width: auto;
+    display: block;
+    margin: 8px 0;
+}
+
+header #logo > a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 7px 0;
+    color: #434a54;
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    word-spacing: 3px;
+    font-size: 2em;
+}
+
+header ul {
+    float: right;
+    padding: 0;
+    margin: 10px 0;
+}
+
+header li {
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+header li > a {
+    text-decoration: none;
+    display: block;
+    font-size: 1.2em;
+    color: #666;
+    padding: 7px 10px;
+    transition: all .1s;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+header li > a:hover {
+    background: #f7f7f7;
+    border-radius: .2em;
+    -webkit-box-shadow: inset 0 0 0 1px #ededed;
+}
+
+header li > span.visible {
+  display: block;
+}
+
+header li > span {
+    width: auto;
+    height: 170px;
+    position: absolute;
+    background: #fff;
+    border: thin solid #ededed;
+    border-radius: .2em;
+    right: 10%;
+    top: 55px;
+    z-index: 100;
+    text-align: center;
+    display: none;
+}
+
+header span .arrow-up {
+    width: 0; 
+    height: 0;
+    position: absolute;
+    top: -12px;
+    right: 87px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #ededed;
+}
+
+header span .arrow-up-top {
+    width: 0; 
+    height: 0;
+    position: absolute;
+    top: -11px;
+    right: 88px;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 11px solid #fff;
+}
+
+header span .form {
+    padding: 15px 10px;
+}
+
+
+
+header li > span input {
+    padding: 5px 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: .2em;
+    border: thin solid #ededed;
+    outline: none;
+    font-size: 1.2em;
+    color: #666;
+    display: block;
+    transition: all .15s;
+}
+
+header li > span input:focus {
+    background: #f9f9f9;
+    color: #ccc;
+}
+
+header li > span .submit-area{
+    width: 100%;
+    padding: 10px 10px;
+    display: inline-block;
+    background: #f9f9f9;
+    border-top: thin solid #ededed;
+}
+
+header li > span input[type=submit] {
+    margin-bottom: 0;
+    width: 100%;
+    background: #434a54;
+    color: #fff;
+    font-size: 1.2em;
+    vertical-align: baseline;
+    float: left;
+    border-radius: .3em;
+}
+
+header li > span input[type=submit]:hover {
+    -webkit-box-shadow: 0 0 0 1px #383e46;
+}
+
+input[class=form-control] {
+    font-size: 1em;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+input[type=checkbox].css-checkbox {
+    display:none;
+ }
+
+input[type=checkbox].css-checkbox + label.css-label {
+    padding-left:21px;
+    float: left;
+    height:12px;
+    width: 100%;
+    margin-bottom: 10px;
+    display:inline-block;
+    line-height:12px;
+    background-repeat:no-repeat;
+    background-position: 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+    font-size: 1.2em;
+    color: #666;
+    text-align: left;
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+    background-position: 0 -12px;
+}
+
+label.css-label {
+    background-size: 12px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#content {
+    width: 49%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+#content .post {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 300px;
+    background: #fff;
+    border: thin solid #ededed;
+    border-radius: .2em;
 }
