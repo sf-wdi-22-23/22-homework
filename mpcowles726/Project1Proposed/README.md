@@ -4,7 +4,7 @@ Project one will be an App that allows fantasy football league users to challeng
 
 A user will log in, and choose which team to challenge by selecting and proposing the wager.
 
-Teams will be included automatically using the Yahoo Sports API along with weekly projected points and actual point totals after the actual NFL games have been played.
+Teams will be included automatically using the Yahoo Fantasy Sports API along with weekly projected points and actual point totals after the actual NFL games have been played.
 
 Eventually I'd like to be able to match up individual positions against each other aside from entire team scores, that may or may not happen in time.
 
