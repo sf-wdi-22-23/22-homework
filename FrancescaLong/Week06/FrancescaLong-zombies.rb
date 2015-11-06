@@ -89,6 +89,66 @@ Level 3
 
 
 
+Level 4
+
+class ZombiesController < ApplicationController
+  def show
+    @zombie = Zombie.find(params[:id])
+  end
+end
+
+
+
+
+class ZombiesController < ApplicationController
+  def show
+    @zombie = Zombie.find(params[:id])
+
+    respond_to do |format|
+      format.xml { render xml: @zombie } 
+    end
+  end
+end
+
+
+
+
+
+class ZombiesController < ApplicationController
+  def create
+    @zombie = Zombie.create(zombie_params)
+    redirect_to zombie_path(@zombie)
+  end
+
+  private
+
+  def zombie_params
+    params.require(:zombie).permit(:name, :graveyard)
+  end
+
+
+
+
+
+class ZombiesController < ApplicationController
+  before_action :find_zombie
+  before_action :check_tweets, only: :show
+
+  def show
+    render action: :show
+  end
+
+  def find_zombie
+    @zombie = Zombie.find params[:id]
+  end
+  
+  def check_tweets
+    if @zombie.tweets.size == 0
+      redirect_to zombies_path
+    end
+  end
+  
+end
 
 
 
