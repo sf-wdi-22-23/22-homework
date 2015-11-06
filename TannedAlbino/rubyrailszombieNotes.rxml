@@ -1,0 +1,54 @@
+# CRUD
+# Create
+t = Tweet.new
+t.status = "I <3 brains."
+t.save
+# Recipe
+# t= TableName.new		t=TableName.new(hash)
+# t.key = value			t.save
+# t.save
+
+
+# Read
+Tweet.find(3)  
+# or Tweet.find(3,4,5)
+# or Tweet.first
+# or Tweet.last
+# or Tweet.all
+#  Tweet.count    gives total number of tweets
+# Tweet.order(:zombie)   returns all tweets, ordered by zombie
+# Tweet.limit(10)    Returns the first 10 tweets
+ # Tweet.where(zombie: "ash")  Returns all tweets from zombie named 'ash'
+
+# Update
+
+t = Tweet.find(3)
+t.zombie = "EyeballChomper"
+t.save
+
+# Alternate Syntax
+# t = Tweet.find(2)
+# t.attributes = {
+# 	status: "Can I munch your eyeballs?",
+# 	zombie: "EyeballChomper" }
+# t.save
+
+# or
+# t = Tweet.find(2)
+# t.update(
+# 	status: "Can I munch your eyeballs")
+# 	zombie: "EyeballChomper")
+
+# Delete
+
+t = Tweet.find(3)
+t.destroy
+
+# Method Chaining
+Tweet.where(zombie: "ash").order(:status).limit(10)
+# Returns only tweets from zombie "ash" ordered by status and only the first 10
+
+Tweet.where(zombie: "ash)").first
+# Returns only tweets from ash, this case just the first one
+
+#Remember this, 
