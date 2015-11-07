@@ -30,7 +30,7 @@ class CreaturesController < ApplicationController
 	def update
 		creature_id = params[:id]
 		creature = Creature.find(creature_id)
-		updated_attributes = params.require(:creature).permit(:name, :desciption)
+		updated_attributes = params.require(:creature).permit(:name, :description)
 		creature.update_attributes(updated_attributes)
 		redirect_to creature
 	end
