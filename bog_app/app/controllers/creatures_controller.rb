@@ -9,7 +9,7 @@ class CreaturesController < ApplicationController
 		render :new
 	end
 	def create
-		creature_params = params.require(:creature).permit(:name, :desciption)
+		creature_params = params.require(:creature).permit(:name, :description)
 		# create a new creature with those parameters
 		creature = Creature.new(creature_params)
 		# check it was saved
@@ -33,5 +33,11 @@ class CreaturesController < ApplicationController
 		updated_attributes = params.require(:creature).permit(:name, :desciption)
 		creature.update_attributes(updated_attributes)
 		redirect_to creature
+	end
+	def destroy
+		id = params[:id]
+		creature = Creature.find(id)
+		creature.destroy
+		redirect_to creatures_path
 	end
 end
