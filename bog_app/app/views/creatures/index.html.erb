@@ -1,8 +1,6 @@
-<ul>
 <% @creatures.each do |creature| %>
-	
-<li>Name: <%= creature.name %> </li>
-<p>Description: <%= creature.description %></p>
-
+	<div>
+		Name: <%= creature.name %> <br>
+		Description: <%= creature.description %>
+	</div>
 <% end %>
-</ul>
