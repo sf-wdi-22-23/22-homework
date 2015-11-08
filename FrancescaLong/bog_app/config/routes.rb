@@ -3,7 +3,11 @@ Rails.application.routes.draw do
 
   # We'll also use the resources method to have Rails 
   # make an index route for our creatures resource.
-  resources :creatures, only: [:index, :new, :create, :show, :edit, :update]
+  resources :creatures, [:index, :new, :create, :show, :edit, :update, :destroy] 
+
+  # eliminted the only: part since we have all methods covered
+  #resources :creatures, only: [:index, :new, :create, :show, :edit, :update, :destroy]
+
   # resources :creatures with :index is equivalent to adding:
   # get "/creatures", to: "creatures#index"
 
@@ -24,5 +28,7 @@ Rails.application.routes.draw do
   # AND
   # put "/creatures/:id", to: "creatures#update"
 
+  # resources :creatures with :destroy is equivalent to adding:
+  # delete "/creatures/:id", to: "creatures#destroy"
 
 end
