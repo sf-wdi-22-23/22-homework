@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 
   root to: 'creatures#index'
-  resources :creatures, only: [:index, :new, :create, :show, :edit, :update]
+  resources :creatures #, only: [:index, :new, :create, :show, :edit, :update, :destroy]
+  # ^ same as resources :creatures, only: [:index, :new, :create, :show, :edit, :update, :destroy]
   # resources :creatures with :index is equivalent to adding:
     # get "/creatures", to: "creatures#index"
   # resources :creatures with :new is equivalent to adding:
@@ -16,5 +17,7 @@ Rails.application.routes.draw do
     # patch "/creatures/:id", to: "creatures#update"
     # AND
     # put "/creatures/:id", to: "creatures#update"
+  # resources :creatures with :destroy is equivalent to adding:
+    # delete "/creatures/:id", to: "creatures#destroy"
 end
 
