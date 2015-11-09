@@ -4,6 +4,8 @@ class CreaturesController < ApplicationController
     render :index
   end
   def new
+    @creature = Creature.new
+    render :new
   end
   def create
     creature_params = params.require(:creature).permit(:name, :description)
