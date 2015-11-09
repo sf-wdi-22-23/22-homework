@@ -1,0 +1,16 @@
+<header id="top" class="header2">
+<div class="row text-vertical-center">
+	<div class="col-xs-12">
+		<img class ="imgCover" src="<%=@bike.image%>">
+		<h1><%=@bike.name%></h1>
+	    <h3 id='property'><%=@bike.property%></h3>
+	    <br>
+        <a href="/creatures/<%=@bike.id%>/edit" id="editButton" class="btn btn-dark btn-lg">Edit this Bike!</a>
+        <br>
+        <br>
+        <%= button_to "Delete this Bike!", @bike , method: :delete , :class => "btn btn-dark btn-lg" , :id =>'deleteButton' %>
+	    </div>
+           
+
+</div>	
+</header>
