@@ -21,7 +21,11 @@
 
 6) Look at app/views/layouts/application.html.erb. What does this file remind you of / what does it contain?
 
+  Models
+
 7) The app/controllers/articles_controller.rb file looks like:
+
+
 
 class ArticlesController < ApplicationController
     def new
@@ -46,9 +50,15 @@ end
 
     -What does the first line ArticlesController < ApplicationController mean?
 
+      -
+
     -How does ArticlesController#new know which view to display?
 
+      -
+
     -Why does @article have that @?
+
+      -
 
 8) What is ActiveRecord? What was the equivalent tool we used with Express?
 
