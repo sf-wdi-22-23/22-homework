@@ -18,4 +18,5 @@ class CreaturesController < ApplicationController
     id = params[:id]
     @creature = Creature.find(id)
     render :show
+  end
 end
