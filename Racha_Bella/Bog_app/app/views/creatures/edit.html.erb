@@ -1,0 +1,29 @@
+<!-- Create new form -->
+    <div class="form" >
+        <ul class="tab-group">
+            <li class="tab active"><a style=" width : 100%">Add a new Bike</a></li>
+        </ul>
+            <div id="signup">   
+                <h1 style="color: white">Add your favorite Bike</h1>
+                <%= form_for @bike, url: "/creatures", method: "post" do |f| %>
+                    <div class="top-row">
+                        <div id='field1' class="field-wrap">
+                            <%= f.label :name %>
+                            <%= f.text_field :name %>
+                        </div>
+                        <div id='field2' class="field-wrap">
+                            <%= f.label :image%>
+                            <%= f.text_field :image %>
+                        </div>
+                    </div>
+                    <div id='field3' class="field-wrap">
+                        <%= f.label :property %>
+                        <%= f.text_field :property %>
+                    </div>
+                    <br>
+                    <br>
+                    <%= f.submit "Update", :id =>'update' ,:class => 'button button-block' %>
+                <% end %>
+            </div>
+        </div>
+        
