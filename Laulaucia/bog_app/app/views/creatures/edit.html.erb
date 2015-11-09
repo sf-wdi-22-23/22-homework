@@ -1,0 +1,7 @@
+<%= form_for @creature do |f| %>
+	<%= label_tag(:name, "Creature Name:") %>
+	<%= f.text_field :name %>
+	<%= label_tag(:description, "Creature Description:") %>
+	<%= f.text_area :description %>
+	<%= f.submit "update creature" %>
+<% end %>
