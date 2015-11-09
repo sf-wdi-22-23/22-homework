@@ -7,4 +7,7 @@ class CreaturesController < ApplicationController
         render :index
     end
 
+    def new
+    	render :new		# optional, this is the default behavior
+	end
 end
