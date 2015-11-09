@@ -3,7 +3,8 @@
 
     <div>
         Name: <%= creature.name %> <br>
-        Description: <%=  creature.description %>
+        Description: <%=  creature.description %> <br>
+        <%= button_to "Delete", creature, method: :delete %>
         <hr>
     </div>
 
