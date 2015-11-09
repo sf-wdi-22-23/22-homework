@@ -19,9 +19,10 @@ class CreaturesController < ApplicationController
         creature = Creature.new(creature_params)
         # check that it saved
         if creature.save
-            # if saved, redirect to route that shows all creatures
-            redirect_to creatures_path
-            # ^ same as redirect_to "/creatures"
+            # if saved, redirect to route that shows just this creature
+            redirect_to creature
+            # ^ same as redirect_to creature_path(creature)
+            # ^ same as redirect_to "/creatures/#{creature.id}"
         end
     end
 
@@ -34,5 +35,41 @@ class CreaturesController < ApplicationController
         render :show
     end
 
+    def edit
+        # save the id parameter to a variable
+        id = params[:id]
+        # look up the creature by id and save to an instance variable
+        @creature = Creature.find(id)
+        # render the edit form view -- it will have access to the @creature instance variable
+        render :edit
+    end
 
+    def update
+        # save the id paramater from the url
+        creature_id = params[:id]
+        # find the creature to update by id
+        creature = Creature.find(creature_id)
+
+        # get updated creature data from params
+        updated_attributes = params.require(:creature).permit(:name, :description)
+        # update the creature
+        creature.update_attributes(updated_attributes)
+
+        # redirect to single creature show page for this creature
+        redirect_to creature
+        # ^ same as redirect_to creature_path(creature)
+        # ^ same as redirect_to "/creatures/#{creature.id}"
+    end
+
+    def destroy
+        # save the id parameter
+        id = params[:id]
+        # find the creature to delete by id
+        creature = Creature.find(id)
+        # destroy the creature
+        creature.destroy
+        # redirect to creatures index
+        redirect_to creatures_path
+        # ^ same as redirect_to "/creatures"
+    end
 end
