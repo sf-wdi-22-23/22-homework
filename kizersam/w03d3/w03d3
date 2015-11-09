@@ -1,0 +1,7 @@
+
+
+1. Javascript is a loosely typed interpreted language that runs in the browser.
+2. Javascript is only able to run a line at a time. The call stack is the "stack" of functions that are queued and waiting to be run once a program begins to run.
+3.The event loop is something the browser does when a function takes too long to execute. It will it push it into an API while the
+rest of the program loads and once the call stack is empty it will push it back in.
+4. When the browser encounter scripts that link to outside data, they must retrieve and process it which can delay the speed that the webpage renders. It is therefor eimportant to defer these scripts to the end of the webpage render so that it does not delay the rendering of critical html elements. 
