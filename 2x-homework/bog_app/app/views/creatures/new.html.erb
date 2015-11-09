@@ -1,0 +1,12 @@
+<!-- app/views/creature-->
+
+<html>
+<%= form_for @creature do |f| %>
+		<h1> creature name here </h1>
+    <%= f.text_field :name %>
+    <h1> description name here </h1>
+    <%= f.text_area :description %>
+    <h1> save creature here </h1>
+    <%= f.submit "save creature" %>
+<% end %>
+</html>
