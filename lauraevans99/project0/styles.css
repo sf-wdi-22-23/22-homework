@@ -1,0 +1,49 @@
+body {
+  color: #333;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: skyblue; /* Sanity Check! */
+  background-image: url("http://i.ytimg.com/vi/rzbpFcqQhlI/maxresdefault.jpg");
+  background-size: 100%;
+}
+
+h1 {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.page-header {
+	color: white;
+}
+
+small {
+	color: yellow;
+}
+
+#submit {
+  float: right;
+	background-color: yellow;
+  color: grey;
+
+}
+
+span {
+	float: right;
+}
+
+#counter {
+  background-color: white;
+}
+
+#subtitle {
+  color: yellow;
+}
+
+li {
+  opacity: 0.5;
+}
+
+#counter {
+  opacity: 0.7;
+  background-color: grey;
+  color: white;
+}
