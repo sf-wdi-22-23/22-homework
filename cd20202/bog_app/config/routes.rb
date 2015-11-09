@@ -2,8 +2,8 @@ Rails.application.routes.draw do
   
   root to: 'creatures#index'
 
-  resources :creatures, only: [:index, :new, :create, :show, :edit, :update, :destroy]
-  
+  resources :creatures  #, only: [:index, :new, :create, :show, :edit, :update, :destroy]
+
   #get '/creatures' => 'creatures#index'
   #get '/creatures/new' => 'creature#new'
   #post '/creatures' => 'creatures#create'
