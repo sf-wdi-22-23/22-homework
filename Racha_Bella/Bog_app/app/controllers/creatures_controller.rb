@@ -27,14 +27,14 @@ class CreaturesController < ApplicationController
 	def edit
 		id = params[:id]
 		@bike = Creature.find(id)
-
+		render :edit
 	end
 
 	def update
 		id = params[:id]
 		bike = Creature.find(id)
-		bike = Creature.update_attributes(params.require(:creature).permit(:name, :image , :property))
-		redirect_to "/creatures/#{@bike.id}"
+		bike.update_attributes(params.require(:creature).permit(:name, :image , :property))
+		redirect_to "/creatures/#{bike.id}"
 	end
 
 	def destroy
