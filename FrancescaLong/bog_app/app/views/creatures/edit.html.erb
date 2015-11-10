@@ -1,0 +1,11 @@
+<!-- app/views/creatures/edit.html.erb -->
+
+<%= form_for @creature do |f| %>
+	<h1>Edit this creature!</h1><br>
+	<h3>Edit Name:</h3>
+    <%= f.text_field :name %>
+ 	<h3>Edit Description:</h3>
+    <%= f.text_area :description %>
+    <%= f.submit "update creature" %>
+
+<% end %>

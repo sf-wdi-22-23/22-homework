@@ -1,0 +1,7 @@
+GET ALL ICECREAM "/icecreams"
+GET ICECREAM ID "/icecream/:id"
+GET ALL CATEGORIES "/types"
+GET CATEGORY BY ID "/types/:id"
+GET ICECREAMS BY CATEGORIES "/types/:id/icecreams"
+POST ICECREAM "/icecreams"
+POST CATEGORY "/types"

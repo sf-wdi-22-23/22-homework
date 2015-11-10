@@ -1,0 +1,20 @@
+body{
+  background-color: teal;
+}
+
+h1{
+  color: white;
+}
+
+#map-canvas {
+  border-style: outset;
+  height: 500px;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+}
+
+.container {
+  padding-bottom: 2em;
+  width:100%;
+}

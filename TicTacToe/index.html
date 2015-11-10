@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- set viewport to device width to allow responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS from CDN -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- link to custom stylesheet (always require after Bootstrap) -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- jQuery from CDN -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <!-- link to custom javascript file (always require after external JS libraries) -->
+    <script type="text/javascript" src="ticTacToe.js"></script>
+
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Tic Tac Toe</h1>
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+
+        <!-- a column represents our game board -->
+        <!-- the `offset` class helps us center the board -->
+        <div class="col-md-6 col-md-offset-3" id="board">
+        <div class="col-md-8 col-md-offset-2" id ="instructions">
+<h2> Instructions </h2>
+  <ol>
+  <li> 1. Click a tile. Player 1 is X and Player 2 is O </li>
+  <li> 2. Winner is determined once either player connects three in a row diagonally, vertically or horizontally. Otherwise it's a tie. </li>
+
+
+  </ol>
+
+</div>
+        
+        <table style="width:100%">
+
+  <tr class = boxes>
+    <td class = "col-xs-4 box"></td>
+    <td class = "col-xs-4 box"></td>    
+    <td class = "col-xs-4 box"></td>
+  </tr>
+  <tr class = boxes>
+    <td class = "col-xs-4 box"></td>
+    <td class = "col-xs-4 box"></td>    
+    <td class = "col-xs-4 box"></td>
+  </tr>
+  <tr class = boxes>
+    <td class = "col-xs-4 box"></td>
+    <td class = "col-xs-4 box"></td>    
+    <td class = "col-xs-4 box"></td>
+  </tr>
+</table>
+
+        </div>
+      </div>
+        <p1 id = "player1"> Player 1 Wins: </p1> 
+        <p2 id = "player2"> Player 2 Wins:</p2> 
+      <div class="row">
+        <div class="col-md-12">
+          <hr>
+          <button class="btn btn-sm btn-default" id="reset"><strong>New Game</strong></button>
+        </div>
+
+  </body>
+</html>
