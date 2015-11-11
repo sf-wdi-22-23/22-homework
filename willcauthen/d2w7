@@ -1,0 +1,40 @@
+RSpec.describe RecipesController, type :controller do
+	describe "#create" do 
+		context "success" do
+			before do
+				@orders_count = Order.count
+				Post :create, order: {name: "Green eggs and ham", directions: "224 Baker Street"}
+			end
+
+			it "should accept new order" do
+				expect(Order.count).to eq(@orders_count + 1)
+			end
+
+			it "should respond with 302 found" do
+				expect(response.status).to be(302)
+			end
+
+			it "should redirect to order_path" do
+				expect(response.location).to match(/\/orders\/\d+/)
+			end
+		end
+
+		context "failure" do
+			before do
+				post :create, order: {name: nil, directions: nil}
+			end
+
+			it "should respond with 302 found" do
+				expect(response.status).to be(302)
+			end
+
+			it "should redirect to 'new_order_path'" do
+				expect(response).to redirect_to(new_order_path)
+			end
+
+			it "should flash an error message" do
+				expect(flash[:error]).to be.present
+			end
+		end
+	end
+end
