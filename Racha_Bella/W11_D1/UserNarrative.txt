@@ -1,0 +1,5 @@
+As a user, i may be able to post a message on the page.
+As a user, my name should appear on the message that i've posted
+As a user, i should delete the message that i posted
+As a user, i can comment on a message.
+As a user, my name should appear on a comment.
