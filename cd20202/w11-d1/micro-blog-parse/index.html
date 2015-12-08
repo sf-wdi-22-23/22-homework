@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Game Time Blog</title>
+
+  <!-- STYLESHEETS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- VENDOR SCRIPTS -->
+  <script src="http://www.parsecdn.com/js/parse-1.6.7.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <!-- APPLICATION SCRIPTS -->
+  <script src="app.js"></script>
+</head>
+<body>
+
+  <div class="container jumbotron text-center">
+    <div class="row">
+      <div class="col-xs-2 header">
+        <img class="clock" src="http://4vector.com/i/free-vector-clock-clip-art_110808_Clock_clip_art_hight.png">
+      </div>
+      <div class="col-xs-8 header">
+        <h1 id="gametime">GAME TIME</h1>
+        <small id="gametimesmall">a game life blog by</small>
+      </div>
+      <div class="col-xs-2 header">
+        <img class="clock" src="http://4vector.com/i/free-vector-clock-clip-art_110808_Clock_clip_art_hight.png">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div data-toggle="tooltip" data-placement="top" title="l3uttertoast est. 2014" class="col-xs-4 gamertag">
+        <h3>l3uttertoast</h3>
+      </div>
+      <div data-toggle="tooltip" data-placement="top" title="cd20202 est. 1993" class="col-xs-4 gamertag">
+        <h3>cd20202</h3>
+      </div>
+      <div data-toggle="tooltip" data-placement="top" title="doesn't really matter..." class="col-xs-4 gamertag">
+        <h3>notSOfunnyM30W</h3>
+      </div>
+    </div>
+  </div>
+
+<!--  Blog  -->
+  <div class="container" id="blog">
+    <div class="row text-center blogActionsBar">
+      <div class="col-xs-2 col-xs-offset-1">
+        <!--  <button class="btn btn-primary center-block text-center" id="localsave">Feelin' Lucky?</button>      -->
+      </div>
+      <div class="col-xs-6">
+      <button data-toggle="modal" data-target="#addBlogPostModal" class="btn btn-primary center-block" id="addPost">
+      Add New Post</button>
+      </div>
+      <div class="col-xs-2 col-xs-offset-1">
+        <button class="btn btn-primary center-block" id="postNum">#Posts:  
+        	<span id="post-track"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+<!--  Footer  -->
+<div class="container" id="footer">
+	<div class="row text-center">
+		<div data-toggle="tooltip" data-placement="right" title="True story." id="gogame" class="col-xs-6 col-xs-offset-3 text-center"><h1>TO GAME IS LIFE<br><small>- Albert Einstein -</small></h1></div>
+    </div>
+	</div>
+</div>
+
+
+  <!-- line modal -->
+  <div class="modal fade" id="addBlogPostModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+          <h3 class="modal-title" id="lineModalLabel">Add a blog post</h3>
+        </div>
+        <div class="modal-body">
+
+          <!-- content goes here -->
+          <form id="createPostForm">
+            <div class="form-group">
+              <label for="inputTitle">Title</label>
+              <input id="Title" type="text" class="form-control inputTitle" placeholder="Write your blog post title here!">
+            </div>
+            <div class="form-group">
+              <label for="imputURLIMG">Image URL</label>
+              <input id="ImageURL" type="text" class="form-control inpulURLIMG" placeholder="Add your image link here!">
+            </div>
+            <div class="form-group">
+              <label for="imputPost">Post</label>
+              <input id="Post" type="text" class="form-control inputPost" placeholder="Write your blog post here!">
+            </div>
+            <div class="form-group">
+              <label for="externalLink">Link</label>
+              <input id="LinkName" type="text" class="form-control externalLink" placeholder="Write your link title here!">
+            </div>
+            <div class="form-group">
+              <label for="externalLink">Link URL</label>
+              <input id="Link" type="text" class="form-control externalLink" placeholder="Add external link URL here!">
+            </div>
+            <div class="form-group">
+              <label for="inputAuthor">Author</label>
+              <input id="Author" type="text" class="form-control inputAuthor" placeholder="Let us know who you are!">
+            </div>
+            <button id="createPost" type="submit" class="btn btn-default" data-dismiss="modal">Submit</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+</html>

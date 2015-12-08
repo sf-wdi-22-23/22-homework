@@ -1,0 +1,120 @@
+/*
+
+created by chris dawson
+
+*/
+.container {
+	min-width: 760px;
+	max-width: 800px;
+}
+.jumbotron {
+	padding: 0px 15px 0px 15px;
+	margin-bottom: 0px;
+	background-color: ;
+}
+.jumbotron #gametime {
+	font-size: 85px;
+	font-family: Times New Roman;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.jumbotron #gametimesmall {
+	font-size: 15px;
+	color: black;
+}
+.header {
+	height: 125px;
+	padding: 10px 10px 10px 10px;
+}
+.gamertag {
+	color: lightgray;
+	background-color: darkgray;
+	text-align: center;
+}
+.clock {
+	height: 100%;
+	width: 100%;
+}
+.blogActionsBar {
+	margin: 15px 0px 15px 0px;
+	height: 40px;
+}
+button#localsave {
+	height: 40px;
+	width: 120px;
+	color: lightgray;
+	background-color: darkgray;
+	border: solid lightgray;
+}
+button#addPost {
+	height: 40px;
+	width: 280px;
+	color: white;
+	background-color: darkgray;
+	border: solid lightgray;
+}
+button#postNum {
+	height: 40px;
+	width: 120px;
+	color: white;
+	background-color: darkgray;
+	border: solid lightgray;
+}
+.bpost {
+	border: solid white;
+	background-color: darkgray;
+}
+.post_img_before {
+	height: 25%;
+	width: 25%;
+}
+.post_img_after {
+	height: 100%;
+	width: 100%;
+}
+.postAuthor {
+	padding-top: 100px;
+}
+#post-track {
+	font-weight: bold;
+	color: black;
+}
+.postTracker {
+	padding-top: 10px;
+}
+.shpost {
+	height: 65px;
+	opacity: .75;
+}
+.col-xs-7 h2 {
+	margin: 15px 0px 15px 0px; 
+}
+.col-xs-2 {
+	padding: 0px 0px 0px 0px;
+}
+.col-xs-3 {
+	padding: 5px 5px 5px 5px;
+}
+.col-xs-4 h3 {
+	margin-top: 10px;
+}
+#gogame h1{
+	font-family: Times New Roman;;
+	font-size: 45px;
+	color: darkgray;
+}
+body {
+	background-image: url(http://pre06.deviantart.net/be1a/th/pre/f/2013/041/5/9/minimalist_star_wars_wallpaper__jedi_emblem_by_diros-d5ui25a.png);
+	background-size: 100% 125%;
+	background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
