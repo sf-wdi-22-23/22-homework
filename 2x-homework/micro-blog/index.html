@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Micro Blog</title>
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- VENDOR SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!--Makes text draggable -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<script src="/static/parse.min.js"></script>
+
+    <!-- APPLICATION SCRIPTS -->
+    <script src="/static/app.js"></script>
+
+        
+
+  </head>
+     <!--Main Header -->
+    <div class="jumbotron">
+      <div class="container">
+      <div class="col-md-8 col-md-offset-2">
+        <h1>Blog of Accomplishments</h1>
+        <p> Simply post a list of your goals, post them and drag them to the Finished section when you're done! </p> 
+        </div>
+      </div>
+    </div>
+    <!--All body goes here -->
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h1>What new goal do you have in mind?</h1>
+
+          <!-- Black line below jumbotron 
+        <hr WIDTH="100%" COLOR="black" Align = "LEFT"> -->
+
+
+        <!--This button will add an input box, the user will type their blog post here -->
+        <input type="text" name="" id="searchinput" class="form-control" value="" required="arequired" placeholder = "Today I'm Going to...." pattern="" title="">
+        <!-- When the user wants to submit their blog post on the site they will click on the site -->
+
+        <button type="submit" class="btn btn-primary" id="submitButton">Post It!</button>
+      </div>
+        </div>
+    </div>
+
+
+    <!--The user's blog post will be placed in the following subsection 1 -->
+    <div class ="row">
+      <div class="col-lg-4 col-lg-push-1" id="col1">
+      <p1> Going to Do it! </p1>
+      <div class ="subsection"> </div>
+      </div>
+
+ <!--The user's blog post will be placed in the following subsection 2 -->
+      <div class="col-lg-4 col-lg-push-2" id="col2">
+      <p1> Finished! </p1>
+      <div class = "subsection2"></div>
+
+      </div>
+
+      </div>
+
+  </body>
+</html>

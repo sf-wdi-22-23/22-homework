@@ -40,11 +40,11 @@ The sessions#create controller action controls login. What does sessions#create 
 
 What does sessions#destroy do (signup, login, or logout)?
 
-It deletes the current session and redirects back to the root path.
+-It deletes the current session and redirects back to the root path.
 
 What route(s) would we have to add if we want users to be able to edit their information?
 
-Routes we need to add: the :update and :edit routes to the routes.rb file
+- Routes we need to add: the :update and :edit routes to the routes.rb file
 
 *Current User with Helper Method*
 

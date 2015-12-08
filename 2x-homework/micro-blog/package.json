@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "mongoose": "^4.1.11"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "micro-blog",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

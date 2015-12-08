@@ -1,0 +1,54 @@
+hr {
+padding: 20px;
+}
+
+button {
+	padding:10px;
+}
+
+.row{
+	padding:10px;
+}
+
+p1 {
+	font-size:20px;
+	text-decoration: underline;
+	color:white;
+}
+.drag {
+    width      : 400px;
+    height     : 100px;
+    background : rgba(255, 0, 0, 0.05);
+    border-radius:25px;
+    background: url("http://www.digitaltoolsforarchitects.com/wp-content/uploads/2013/02/crumpled-brown-paper-texture.jpg");
+    background-repeat: repeat;
+    padding:20px;
+
+}
+
+#col1 {
+	border: 3px solid white;
+}
+
+#col2 {
+	  	border: 3px solid white;
+}
+h1{
+	color:white;
+}
+
+body{
+background: url("http://scitechdaily.com/images/GRB-130606A-One-of-the-Most-Distant-Gamma-Ray-Bursts-Ever-Found.jpg");
+}
+
+.jumbotron {
+	background: #000 url("http://www.onecreativecouple.com/wp-content/uploads/2012/12/sw-wall.jpg") center center;
+	font-family:Papyrus;
+	position: relative;
+    color:white;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    opacity:75%;
+}
