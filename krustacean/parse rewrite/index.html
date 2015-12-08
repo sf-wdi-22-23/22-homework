@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project 0 | Riley Gelwicks</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h2><blog>Parse Blog</blog></h2>
+        <p>Parse it up...</p>
+      </div>
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+          <div class="form-group">
+            <label for="new-post-title">Title</label>
+            <input type="text" class="form-control" id="new-post-title" autofocus="true" placeholder="What's this about?">
+          </div>
+          <div class="form-group">
+            <label for="new-post">What would you like to say?</label>
+            <textarea class="form-control" rows="3" id="new-post" placeholder="Please expound here..."></textarea>
+            <br>
+            <button type="submit" class="btn btn-primary btn-xl pull-right" role="button" id="submit-button" aria-label="Center">Submit</button>
+          </div>
+          <br>
+          <hr>
+        </div>
+    </div>
+    </div>
+    <div class="container" >
+      <div class="row" id="all-posts">
+      </div>
+    </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://www.parse.com/downloads/javascript/parse-1.6.7.min.js" charset="utf-8"></script>
+    <script src="base.js"></script>
+  </body>
+</html>
