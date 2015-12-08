@@ -1,0 +1,33 @@
+body {
+  color: #333;
+  font-family: Helvetica, Arial, sans-serif;
+  background-image: url(http://wallpapers-for-ipad.com/download/summer-beach.jpg);
+  background-size: 100%;
+}
+
+
+
+h1 {
+  font-family: 'Lobster', Georgia, Times, serif;
+    font-size: 70px;
+    line-height: 100px;
+    text-align: center;
+}
+
+#input-box-text{
+	font-size: 20px;
+}
+button {
+	margin-top: 20px;
+	border-color: black;
+}
+
+h3{
+	margin-top: 30px;
+	margin-bottom: 1px;
+	font-weight: bolder;
+}
+
+hr{
+	margin-top: 5px;
+}
