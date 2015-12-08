@@ -1,0 +1,27 @@
+<h1> Add new user form:</h1>
+<form ng-submit="addUser()">
+  <div class='form-group'>
+  <label for="">Name</label>
+  <input type="text" class="form-control" ng-model="newUser.firstname">
+  </div>
+  <div class='form-group'>
+  <label for="">Age</label>
+  <input type="text" class="form-control" ng-model="newUser.age">
+  </div>
+  <button type="submit" class="btn btn-primary">Add user</button>
+</form>
+
+</br>
+<h1> Adults </h1>
+<ul>
+  <li ng-repeat="user in users" ng-show="user.age >= 18">
+    <a ui-sref="users-show({user_id: user.id})">{{user.firstname}}</a> is {{user.age}} years old
+  </li>
+</ul>
+</br>
+<h1> Kids </h1>
+<ul>
+  <li ng-repeat="user in users" ng-show="user.age < 18">
+    <a ui-sref="users-show({user_id: user.id})">{{user.firstname}}</a> is {{user.age}} years old
+  </li>
+</ul>
